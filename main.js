@@ -1,4 +1,5 @@
 const section = document.querySelector("#form_area");
+const createFormButton = document.querySelector("#create_form");
 
 function createForm() {
   let form = document.createElement("form");
@@ -37,3 +38,5 @@ function createForm() {
   section.append(form);
   section.append(div);
 }
+
+createFormButton.addEventListener("click", createForm);
