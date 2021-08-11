@@ -3,6 +3,8 @@ const createFormButton = document.querySelector("#create_form");
 const deleteFormButton = document.querySelector("#delete_form");
 
 function createForm() {
+  deleteForm();
+
   let form = document.createElement("form");
   form.setAttribute("id", "form");
   form.setAttribute("class", "multiplication-form");
