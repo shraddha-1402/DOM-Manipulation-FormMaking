@@ -25,10 +25,15 @@ function createForm() {
   button.setAttribute("class", "button");
   button.innerText = "Submit";
 
+  let div = document.createElement("div");
+  div.setAttribute("id", "output");
+  div.setAttribute("class", "output-div");
+
   form.append(
     input1,
     input2,
     button,
   );
   section.append(form);
+  section.append(div);
 }
