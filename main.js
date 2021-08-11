@@ -1,5 +1,6 @@
 const section = document.querySelector("#form_area");
 const createFormButton = document.querySelector("#create_form");
+const deleteFormButton = document.querySelector("#delete_form");
 
 function createForm() {
   let form = document.createElement("form");
@@ -39,4 +40,12 @@ function createForm() {
   section.append(div);
 }
 
+function deleteForm() {
+  while (section.firstChild) {
+    section.removeChild(section.firstChild);
+  }
+}
+
 createFormButton.addEventListener("click", createForm);
+deleteFormButton.addEventListener("click", deleteForm);
+
