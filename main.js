@@ -48,6 +48,7 @@ function createForm() {
   );
   section.append(form);
   section.append(div);
+  document.querySelector("#form").addEventListener("submit", multiplyNumbers);
 }
 
 function deleteForm() {
