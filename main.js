@@ -2,6 +2,14 @@ const section = document.querySelector("#form_area");
 const createFormButton = document.querySelector("#create_form");
 const deleteFormButton = document.querySelector("#delete_form");
 
+function multiplyNumbers(event) {
+  const number1 = document.querySelector("#first_number");
+  const number2 = document.querySelector("#second_number");
+  const output = document.querySelector("#output");
+  output.innerText = "Multiplication = " + parseInt(number1.value) * parseInt(number2.value);
+  event.preventDefault();
+}
+
 function createForm() {
   deleteForm();
 
