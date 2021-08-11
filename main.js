@@ -22,4 +22,10 @@ function createForm() {
   button.setAttribute("id", "submit_button");
   button.setAttribute("class", "button");
   button.innerText = "Submit";
+
+  form.append(
+    input1,
+    input2,
+    button,
+  );
 }
